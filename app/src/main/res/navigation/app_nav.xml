@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.pdp.adiblar.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_search1Fragment"
+            app:destination="@id/search1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveFragment"
+        android:name="uz.pdp.adiblar.ui.SaveFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_save" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="uz.pdp.adiblar.ui.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="uz.pdp.adiblar.ui.InfoFragment"
+        android:label="InfoFragment" />
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="uz.pdp.adiblar.ui.PagerFragment"
+        android:label="fragment_pager"
+        tools:layout="@layout/fragment_pager">
+        <action
+            android:id="@+id/action_pagerFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/search1Fragment"
+        android:name="uz.pdp.adiblar.ui.Search1Fragment"
+        android:label="fragment_search1"
+        tools:layout="@layout/fragment_search1" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="uz.pdp.adiblar.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+</navigation>
